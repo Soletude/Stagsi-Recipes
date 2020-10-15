@@ -1,0 +1,30 @@
+{
+  "name": "My Search in Stagsi",    // `! +REPLACEME="M.*"
+  "version": "1.0",
+  "manifest_version": 2,
+  // `! +REPLACEME="R.*"
+  "description": "Runs Stagsi /search from page selection and omnibox.",
+  "omnibox": {"keyword": "stg"},    // `! +REPLACEME=stg
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {},
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "icons": {
+    "16": "icon16.png"    // `! +REPLACEME="i.*"
+  },
+  "permissions": [
+    "nativeMessaging"
+  ],
+  // `! +REPLACEME=di\w+?
+  // In this example we assume diikokbialbifgbobhohkjgaelcohcbo ID.
+  "key": "..."    // `! +REPLACEME="\..*"
+}

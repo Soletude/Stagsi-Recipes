@@ -1,0 +1,34 @@
+License
+-------
+Everything you contribute to this repository must be released under CC0 - a kind
+of public domain license: https://creativecommons.org/publicdomain/zero/1.0/
+
+All your commits must be signed-off by yourself in acknowledgement of this fact.
+
+Formatting
+----------
+Most samples are compact and contained in a single file. In this case, they must
+have an informational comment on top of the file (or after the line with the
+opening tag such as <?php or #!shebang) to facilitate automatic aggregation of
+samples into the Cookbook (https://go.soletude.ca/stagsi/cookbook) and elsewhere:
+
+  [prefix] `! lic=cc0`, con=[Name]<[proto:]your@contact>`, rev=$Id$ [`,+ suffix]
+
+Vimmers may recognize it's a kind of modeline. It allows arbitrary trailing text
+(suffix) in addition to arbitrary prefix.
+
+lic indicates the content's license (always CC0 in this repository).
+
+con stands for "contact" and can be as simple as <example@soletude.ca> where
+the default proto: (protocol) is mailto:.
+
+rev is a stand-in for the commit hash (man gitattributes, ident).
+
+Sample info lines for C:
+
+  // `! lic=cc0`, con=Young Xi<https://insane.org>`, rev=$Id$
+  /* `! lic=cc0`, con=Young Xi<https://insane.org>`, rev=$Id$`, +*/
+
+If your sample needs multiple files then allocate a subdirectory in any of
+the existing directories (e.g. in Tools) with a README.txt inside which has
+the info line on top. Having it in other files is optional (but it won't hurt).

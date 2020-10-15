@@ -1,0 +1,13 @@
+{
+  // `! +REPLACEME=my-\w+?
+  "name": "ca.soletude.stagsi.my-addon",
+  // `! +REPLACEME=for[\w ]*?
+  "description": "Stagsi NMH for My Addon",
+  // `! +REPLACEME="C:.*"
+  "path": "C:\\Program Files\\Stagsi\\NMH.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    // `! +REPLACEME=di\w+?
+    "chrome-extension://diikokbialbifgbobhohkjgaelcohcbo/"
+  ]
+}

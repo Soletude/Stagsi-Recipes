@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+; `! lic=cc0`, con=<norkov@soletude.ca>`, rev=$Id$
+; Used in Stagsi Cookbook: `@https://go.soletude.ca/stagsi/ex/JN`@
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\Find in Stagsi\command]
+; `! +REPLACEME=C:.*(?=\\")
+@="\"C:\\Program Files (x86)\\Stagsi\\Stagsi.exe\" /hash \"%1\""

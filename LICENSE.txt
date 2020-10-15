@@ -1,0 +1,5 @@
+Everything in this repository is released in public domain, or the CC0 license.
+The choice between the two is left at the user's discretion.
+
+Creative Commons Zero (CC0) legal page:
+https://creativecommons.org/publicdomain/zero/1.0/
